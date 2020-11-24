@@ -1,0 +1,89 @@
+/* meau */
+.el-breadcrumb {
+    line-height: 64px;
+     flex: 1;
+}
+.el-menu {
+    background: transparent;
+    border: none;
+}
+.el-menu span {
+    font-size: 16px;
+    font-family: "微软雅黑";
+    color: #FFFFFF;
+}
+.el-submenu .el-menu-item {
+    height: 46px;
+    font-size: 14px;
+    font-family:  "微软雅黑";
+    color: #FFFFFF;
+}
+.el-submenu__title i{
+    color: #fff;
+}
+.el-submenu__title:hover {  
+    background: rgba(255, 255, 255, 0.3);
+}
+.el-menu-item:focus,
+.el-menu-item:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+.collapse .el-submenu__title{
+    padding: 0 !important;
+    text-align: center;
+}
+.el-menu--collapse{
+    width: auto;
+}
+.el-menu--vertical{
+    display: none;
+}
+
+/* 下拉菜单*/
+.el-dropdown{
+    cursor: pointer;
+    
+}
+.el-dropdown .el-dropdown-link{
+    display: flex;
+    justify-content: left;
+}
+[class*=" el-icon-"], [class^=el-icon-]{
+    line-height: 2;
+}
+.el-dropdown-menu {
+    top: 48px;
+    border-radius: 10px;
+    background: -webkit-gradient(linear,left top, left bottom,from(rgba(71,91,160,1)),to(rgba(47,165,187,1))) ;
+    background: linear-gradient(180deg,rgba(71,91,160,1) 0%,rgba(47,165,187,1) 100%) ;
+    border: none ;
+    -webkit-box-shadow: none ;
+    box-shadow: none ;
+}
+.el-dropdown-menu__item{
+    color: #fff;
+}
+.el-dropdown-menu__item:not(.is-disabled):hover {
+    background: none;
+    background-color: rgba(255,255,255,0.3);
+    border-radius: 0px;
+    color: #fff;
+}
+ .el-popper .popper__arrow {
+    border-bottom-color: #475BA0 ;
+    border-top-color: #475BA0 ;
+}
+ .el-popper  .popper__arrow::after {
+    border-bottom-color: #475BA0 !important;
+    border-top-color: #475BA0 !important;
+}
+.el-popper .popper__arrow, .el-popper .popper__arrow::after {
+    position: absolute;
+    top: 0px;
+    border-top-width: 0;
+    display: block;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+}
