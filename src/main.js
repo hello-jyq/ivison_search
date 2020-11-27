@@ -27,6 +27,7 @@ new Vue({
   template: '<App/>'
 })
 
+
 // 设置session
 Vue.prototype.resetSetItem = function (key, newVal) {
   if (key == 'formState') {
