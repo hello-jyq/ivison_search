@@ -4,8 +4,8 @@
       <div class="con">
         <div class="header">
               <el-breadcrumb separator-class="el-icon-arrow-right">
-                <el-breadcrumb-item :to="{ path: '/' }">首页</el-breadcrumb-item>
-                <el-breadcrumb-item>{{$route.name}}</el-breadcrumb-item>
+                <el-breadcrumb-item :to="{ path: '/' }">普通搜索</el-breadcrumb-item>
+                <el-breadcrumb-item v-if="$route.name!='普通搜索'">{{$route.name}}</el-breadcrumb-item>
               </el-breadcrumb>
               <div class="info">          
                   <el-dropdown trigger="click" placement="top">                
@@ -34,10 +34,7 @@
                   </el-dropdown>
               </div>
           </div>
-
-        <div class="main">
               <router-view/>
-        </div>
       </div>
   </div>
 </template>
@@ -96,6 +93,5 @@ export default {
   margin-left: 40px;
   margin-right: 40px;
   flex: 1;
-  overflow-y: auto;
 }
 </style>

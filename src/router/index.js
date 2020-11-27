@@ -28,6 +28,11 @@ export default new Router({
           component: () => import('@/views/search/advancedSearch'),
         },
         {
+          path: '/search_result',
+          name: '搜索结果',
+          component: () => import('@/views/search/searchResult'),
+        },
+        {
           path: '/personal_tag',
           name: '个人标签管理',
           component: () => import('@/views/searchManagement/personalTag'),
