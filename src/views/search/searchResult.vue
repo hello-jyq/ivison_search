@@ -61,7 +61,6 @@ export default {
     }
   },
   watch: {
-    // isCollapse=sessionStorage.getItem('isCollapse'),
   },
   created() {
     console.log(this.$route.query)
