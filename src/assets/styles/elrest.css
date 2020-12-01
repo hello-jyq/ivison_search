@@ -286,3 +286,188 @@ border-color: #2D7A9C;
 .el-radio__input.is-checked+.el-radio__label{
     color: #333333;
 }
+
+
+/* button */
+.el-button i{ 
+    margin-right: 5px;
+    font-size: 18px;
+}
+.con_box  .el-button:focus, .el-button:hover {
+    color: #888888;
+    border-color: #3F71A8;
+    background-color: #ffffff
+}
+.con_box  .el-button, .el-button {
+    color: #888888;
+    border-color: #3F71A8;
+    background-color: #ffffff;
+    width: 100px ;
+    height: 40px ;
+    padding: 0;
+}
+  .con_box  .el-button--primary:focus, .el-button--primary:hover {
+    
+background: linear-gradient(180deg, #475BA0 0%, #2FA5BB 100%);
+    border: none;
+    color: #FFF;
+}
+
+
+ .con_box .el-button--primary{
+    border: none;
+    background: linear-gradient(180deg, #475BA0 0%, #2FA5BB 100%);
+    border-radius: 25px !important;
+    color: #fff;
+    font-size: 16px;
+    font-family: MicrosoftYaHei;
+    color: #FFFFFF;
+    line-height: 40px;
+    text-align: center;
+}
+/************* 二次检索 **************/
+/*  树形控件*/
+.el-tree{
+    background-color: transparent;
+}
+.el-tree-node__content:hover{
+    /* color: #2D7A9C; */
+    /* background-color:transparent */
+}
+.el-tree-node:focus>.el-tree-node__content{
+    background-color: transparent;
+}
+.el-tree-node__expand-icon{
+    color: #2D7A9C;
+}
+.el-tree-node__label{
+    font-size: 14px;
+    font-family: "微软雅黑";
+    color: #333333;
+    line-height: 19px;
+}
+.el-tree-node__content{
+    height: 20px;
+}
+.el-tree-node__content  .is-disabled + .el-tree-node__label{
+   
+    font-size: 14px;
+    font-family: "微软雅黑";
+    color: #999999;
+    line-height: 19px; 
+    cursor: not-allowed;
+}
+.el-tree-node__content  .is-disabled{
+    opacity: 0;
+}
+.con_box  .el-tree-node__expand-icon{
+font-size: 12px;
+}
+
+.con_box  .el-tree-node__content>.el-tree-node__expand-icon {
+    padding: 6px 10px;
+}
+
+/* 复选框 */
+.result_DIY .el-checkbox__input.is-checked .el-checkbox__inner, .el-checkbox__input.is-indeterminate .el-checkbox__inner{
+    background-color: transparent;
+    border-color: #2D7A9C;
+}
+.result_DIY .el-checkbox__inner:hover {
+    border-color: #2D7A9C;
+}
+.result_DIY .el-checkbox__inner::after{
+border-color: #2D7A9C;
+}
+.result_DIY .el-checkbox__input.is-indeterminate .el-checkbox__inner::before{
+     background-color: #2D7A9C;
+}
+.result_DIY .el-tree-node{
+     margin-top: 15px;
+
+}
+.result_DIY .el-checkbox-group{
+    display: flex;
+    flex-direction: column;
+}
+.result_DIY .el-checkbox-group .el-checkbox{
+    color: #333333;
+    margin-top: 15px;
+}
+.result_DIY  .el-checkbox__input.is-checked+.el-checkbox__label{
+     color: #333333;
+}
+/* 单选框 */
+.result_DIY .el-radio-group{
+    display: flex;
+    flex-direction: column; 
+}
+.result_DIY .el-radio{
+  color: #333333;
+    margin-top: 15px;
+}
+
+.result_DIY .el-range-editor.el-input__inner{
+    width: 240px;
+    height: 28px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    border: 1px solid #CCCCCC;
+    margin-top: 15px;
+}
+.result_DIY .el-date-editor .el-range__icon{
+    height: 28px;
+    line-height: 28px;
+}
+.result_DIY .el-date-editor .el-range-separator{
+    line-height: 19px;
+    color: #333333;
+    padding: 0;
+    width: auto;
+}
+
+
+.diy_size {
+  display: flex;
+  line-height: 28px;
+  margin-top: 15px;
+   max-width: 240px;
+}
+.diy_size .zhi{
+    border-top: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+    line-height: 26px;
+    color:#333333 ;
+    font-size: 14px;
+}
+.diy_size .icon-daxiao{
+    line-height: 28px;
+}
+.diy_size .from .el-input__inner {
+  height: 28px;
+  background: #ffffff;
+ border-radius: 0;
+ padding-left: 25px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  /* border: 1px solid #cccccc; */
+  border-bottom: 1px solid #cccccc;
+  border-right: none;
+  border-top: 1px solid #cccccc;
+   border-left: 1px solid #cccccc;
+  
+}
+
+.diy_size .to .el-input__inner {
+  height: 28px;
+  background: #ffffff;
+ border-radius: 0;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  /* border: 1px solid #cccccc; */
+  border-bottom: 1px solid #cccccc;
+  border-right: 1px solid #cccccc;
+  border-top: 1px solid #cccccc;
+    border-left: none;
+
+}

@@ -76,9 +76,8 @@ export default {
     changeCollapse() {
       this.isCollapse = !this.isCollapse;
       this.openeds = [];
-      // sessionStorage.setItem('isCollapse', this.isCollapse);
-      this.resetSetItem('formState', this.isCollapse);
-      //document.cookie = 'username=' + this.isCollapse + '';
+      this.$store.state.falg = this.isCollapse
+      console.log('meau', this.isCollapse)
     },
     onOpen() {
       this.isCollapse = false;

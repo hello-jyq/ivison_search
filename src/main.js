@@ -4,8 +4,11 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import axios from 'axios'
-import ElementUI from 'element-ui';
-import 'element-ui/lib/theme-chalk/index.css';
+import Vuex from 'vuex'
+import store from './store/store'
+import ElementUI from 'element-ui'
+import 'element-ui/lib/theme-chalk/index.css'
+
 
 
 // 引入字体图标css (字体图标的使用：iconfont icon-**）
@@ -18,29 +21,36 @@ import '@/assets/styles/styles.css'
 Vue.config.productionTip = false
 Vue.prototype.$axios = axios;
 Vue.use(ElementUI);
+Vue.use(Vuex);
 
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
+  store,
   router,
   components: { App },
   template: '<App/>'
 })
 
-// 设置session
-Vue.prototype.resetSetItem = function (key, newVal) {
-  if (key == 'formState') {
-    // 创建一个StorageEvent事件
-    var newStorageEvent = document.createEvent('StorageEvent');
-    const storage = {
-      setItem: function (k, val) {
-        sessionStorage.setItem(k, val);
-        // 初始化创建的事件
-        newStorageEvent.initStorageEvent('setItem', false, false, k, null, val, null, null);
-        // 派发对象
-        window.dispatchEvent(newStorageEvent)
-      }
-    }
-    return storage.setItem(key, newVal);
-  }
-}
+// // 设置session
+// Vue.prototype.resetSetItem = function (key, newVal) {
+//   if (key == 'formState') {
+//     // 创建一个StorageEvent事件
+//     var newStorageEvent = document.createEvent('StorageEvent');
+//     const storage = {
+//       setItem: function (k, val) {
+//         sessionStorage.setItem(k, val);
+//         // 初始化创建的事件
+//         newStorageEvent.initStorageEvent('setItem', false, false, k, null, val, null, null);
+//         // 派发对象
+//         window.dispatchEvent(newStorageEvent)
+//       }
+//     }
+//     return storage.setItem(key, newVal);
+//   }
+// }
+// // 使用    this.resetSetItem('formState', this.isCollapse);
+// //获取    
+// window.addEventListener('setItem', () => {
+//             sessionStorage.getItem('formState');
+//     })
